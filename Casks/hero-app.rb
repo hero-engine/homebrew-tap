@@ -1,6 +1,6 @@
 cask "hero-app" do
-  version "0.1.0"
-  sha256 "213a0809bfecccfb6423eb8b34fd0e6a76df202d3227a3f9b25d3505132cbc0f"
+  version "0.2.0"
+  sha256 "d9fc132f93abc5b450e109aed1293c24d97f070b9d907bf8ed467d4d7ef4e0f5"
 
   url "https://github.com/hero-engine/hero-app-releases/releases/download/v#{version}/Hero-#{version}.dmg"
   name "Hero"
