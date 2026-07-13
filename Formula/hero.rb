@@ -5,21 +5,21 @@
 class Hero < Formula
   desc "Spec-driven AI engineering workflow"
   homepage "https://hero-engine.dev"
-  version "0.25.0"
+  version "0.25.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hero-engine/hero-releases/releases/download/v0.25.0/hero_0.25.0_darwin_amd64.tar.gz"
-      sha256 "28e8aca0f1ff8d4363f19f8dfc2cb6899ddc31a381ead59e0ae9971261d72bed"
+      url "https://github.com/hero-engine/hero-releases/releases/download/v0.25.1/hero_0.25.1_darwin_amd64.tar.gz"
+      sha256 "0be16ce88ba77836a90dd62656e5c8ad321279282840bedec20264f8cf03941e"
 
       define_method(:install) do
         bin.install "hero"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hero-engine/hero-releases/releases/download/v0.25.0/hero_0.25.0_darwin_arm64.tar.gz"
-      sha256 "73677b0ba3da4625c0ea4c172a33625c0c621c433aaf3dfe7c865e3cc1d932b6"
+      url "https://github.com/hero-engine/hero-releases/releases/download/v0.25.1/hero_0.25.1_darwin_arm64.tar.gz"
+      sha256 "87d669c672ac2bb7606cc4663deb44a736fa5596768954da0c3d9fde7ccd095d"
 
       define_method(:install) do
         bin.install "hero"
@@ -29,15 +29,15 @@ class Hero < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hero-engine/hero-releases/releases/download/v0.25.0/hero_0.25.0_linux_amd64.tar.gz"
-      sha256 "2d1c95072ff02e459f3742471964e63aba9f2b91b72f70d51328df2539e37bc7"
+      url "https://github.com/hero-engine/hero-releases/releases/download/v0.25.1/hero_0.25.1_linux_amd64.tar.gz"
+      sha256 "57aa195fe86e583e4e5355effe70d3ac37cdb6d60b003d76dbaca707e857adbd"
       define_method(:install) do
         bin.install "hero"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hero-engine/hero-releases/releases/download/v0.25.0/hero_0.25.0_linux_arm64.tar.gz"
-      sha256 "ac1444d97d83d90b293ce99c971c8e25b65d76b8b9137520e6a6f44a38b4d301"
+      url "https://github.com/hero-engine/hero-releases/releases/download/v0.25.1/hero_0.25.1_linux_arm64.tar.gz"
+      sha256 "547bb4ab36be682a1be514a632db75f41444bb16100ab0e14c413d930fc519a8"
       define_method(:install) do
         bin.install "hero"
       end
